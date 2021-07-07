@@ -51,24 +51,21 @@ p, button {
     background-color: #0B223C;
 }
 .bg-1 {
-    background-color: #efefef;
+    background-color: #FFFFFF;
 }
 .bg-2 {
     background-color: #438bdc;
 }
 .bg-3 {
-    background-color: #f98300;
+    background-color: #FD882E;
 }
 
 .text-0 {
     color: #0B223C;
 }
-.text-1 {
-    color: #efefef;
-}
 .text-2 {
     color: #438bdc;
 }
 .text-3 {
-    color: #f98300;
+    color: #FD882E;
 }
