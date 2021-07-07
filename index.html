@@ -71,19 +71,24 @@
     </nav>
 
     <!-- Who I Am section -->
-    <div id="who-i-am" class="container-fluid section bg-0 p-5 text-light">
+    <div id="who-i-am" class="container-fluid section bg-0 p-5 text-1">
     <div class="container" data-aos="fade-up">
         <h1 class="text-2 text-center">Who I Am</h1>
         <div class="p-5">
             <p>
-                I'm an intuitive, creative, hardworking student at Lipscomb University. My diverse
-                creative background grants me a lot of fresh perspective and insight into the problems I solve.
-                In addition to my consistent drive to improve and learn more about the UX field, I highly value critical
+                I'm a creative and hardworking student at Lipscomb University. I have a uniquely diverse
+                background in creative fields and technical areas, giving me a great combination of creative intuition
+                and analytical problem-solving. In addition to my consistent drive to improve and learn more about the UX field,
+                I highly value critical
                 soft skills like effective communication, clear writing, and time management.
             </p>
             <p class="pt-5">
                 I'm currently pursuing a Web Development major with a focus on UI/UX Design, and I'm working towards a
                 career in User Experience Design or Audio Experience Design.
+            </p>
+            <p class="pt-5">
+                Fun fact: I'm also an avid music composer! I love creating music in all sorts of different styles, and I also
+                heartily enjoy learning piano.
             </p>
         </div>
 
@@ -95,7 +100,8 @@
     <div class="container" data-aos="fade-up">
         <h1 class="text-3 text-center">Recent Projects</h1>
         <!-- project 1 -->
-        <div id="project-1" class="row p-5">
+        <div id="project-1" class="card rounded-lg shadow my-5 p-4" data-aos="flip-down">
+        <div class="row">
             <div class="col-md-6 pb-3">
                 <a href="#"><img src="images/printerapp.png" class="img-fluid zoom" alt="placeholderimage"></a>
             </div>
@@ -108,11 +114,13 @@
                     our product with successive iterations. We finished with a detailed mobile mockup
                     and a working demo version for desktop.
                 </p>
-                <a href="#"><button type="button" class="btn bg-3 mt-5 py-2 px-3 zoom">Learn More</button></a>
+                <a href="#"><button type="button" class="btn text-button text-3 mt-5 py-2 pl-0 mx-0 zoom">Learn More <i class="fas fa-chevron-right"></i></button></a>
             </div>
         </div>
+        </div>
         <!-- project 2 -->
-        <div id="project-2" class="row p-5">
+        <div id="project-2" class="card rounded-lg shadow my-5 p-4" data-aos="flip-down">
+        <div class="row">
             <div class="col-md-6 pb-3">
                 <a href="#"><img src="placeholder.png" class="img-fluid zoom" alt="placeholderimage"></a>
             </div>
@@ -125,14 +133,19 @@
                     styles, I followed our site map to craft a clear, organized site that informs visitors of the Move! Music City
                     program and encourages them to take their next step (no pun intended).
                 </p>
-                <a href="#"><button type="button" class="btn bg-3 mt-5 py-2 px-3 zoom">Learn More</button></a>
+                <a href="#"><button type="button" class="btn text-button text-3 mt-5 py-2 pl-0 mx-0 zoom">Learn More <i class="fas fa-chevron-right"></i></button></a>
             </div>
         </div>
+        </div>
+
     </div>
     </div>
 
+
+
+
     <!-- My Skillset section -->
-    <div id="my-skillset" class="container-fluid section bg-0 p-5 text-light">
+    <div id="my-skillset" class="container-fluid section bg-0 p-5 text-1">
     <div class="container" data-aos="fade-up">
         <h1 class="text-2">My Skillset</h1>
     </div>
@@ -149,7 +162,7 @@
 <!-- animate on scroll script -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-    AOS.init({ once: true, });
+    AOS.init({ once: false, });
 </script>
 
 </body>

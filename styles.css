@@ -26,7 +26,9 @@ p, button {
 .h-medium {
     font-size: 250%;
 }
-
+.text-button {
+    font-size: 115%;
+}
 
 .section {
     min-height: 30em;
@@ -49,21 +51,24 @@ p, button {
     background-color: #0B223C;
 }
 .bg-1 {
-    background-color: #FFFFFF;
+    background-color: #efefef;
 }
 .bg-2 {
-    background-color: #2878D4;
+    background-color: #438bdc;
 }
 .bg-3 {
-    background-color: #FD882E;
+    background-color: #f98300;
 }
 
 .text-0 {
     color: #0B223C;
 }
+.text-1 {
+    color: #efefef;
+}
 .text-2 {
-    color: #2878D4;
+    color: #438bdc;
 }
 .text-3 {
-    color: #FD882E;
+    color: #f98300;
 }
