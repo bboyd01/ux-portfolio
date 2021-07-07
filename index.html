@@ -10,71 +10,80 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/d687bf9a07.js" crossorigin="anonymous"></script>
+    <!-- animate on scroll effect -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- custom styles and scripts -->
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js"></script>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="70">
+<body data-spy="scroll" data-target=".navbar" data-offset="150">
+
+    <!-- name and picture section -->
+    <div id="top" class="container-fluid section bg-1" style="min-height: 50em;">
+    <div class="container">
+        <div class="row name-spacing pb-5">
+            <div class="col-md-5">
+                <h1 class="h-big" data-aos="flip-down" data-aos-duration="800">Brett Boyd</h1>
+                <h1 class="h-medium" data-aos="fade-up" data-aos-duration="1100">UX Designer</h1>
+            </div>
+            <div class="col-md-7 pt-5">
+                <img src="pic-no-bg.png" class="img-fluid" alt="Picture of Me" style="scale: 150%">
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center py-5 zoom">
+            <a href="#who-i-am" class="text-0" style="font-size: 3em"><i class="fas fa-chevron-down"></i></a>
+        </div>
+
+    </div>
+    </div>
+
+    <!-- navbar -->
     <nav class="navbar navbar-expand-sm bg-0 navbar-dark sticky-top">
-        <a class="navbar-brand" href="#top">Brett Boyd</a>
+        <a class="navbar-brand zoom" href="#top">Brett Boyd</a>
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="#who-i-am">Who I Am</a>
+                <a class="nav-link zoom" href="#who-i-am">Who I Am</a>
             </li>
-            <!-- <li class="nav-item">
-                <a class="nav-link" href="#recent-projects">Recent Projects</a>
-            </li> -->
-
-
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#"  data-toggle="dropdown">
+            <li class="nav-item">
+                <a class="nav-link zoom" href="#recent-projects">Recent Projects</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle zoom" href="#"  data-toggle="dropdown">
                     Recent Projects
                 </a>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="#project-1">Project 1</a>
                     <a class="dropdown-item" href="#project-2">Project 2</a>
                 </div>
-            </li>
+            </li> -->
         
             <li class="nav-item">
-                <a class="nav-link" href="#my-skillset">My Skillset</a>
+                <a class="nav-link zoom" href="#my-skillset">My Skillset</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact Me</a>
+                <a class="nav-link zoom" href="#contact">Contact Me</a>
             </li>
         </ul>
     </nav>
 
-    <!-- name and picture section -->
-    <div id="top" class="container-fluid section bg-1 p-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-7">
-                <h1>Brett Boyd</h1>
-                <h3>UX Designer</h3>
-            </div>
-            <div class="col-5">
-                <img src="brett.jpg" class="img-fluid" alt="Picture of Me">
-            </div>
-        </div>
-    </div>
-    </div>
-
     <!-- Who I Am section -->
     <div id="who-i-am" class="container-fluid section bg-0 p-5 text-light">
-    <div class="container">
-        <h1 class="text-2">Who I Am</h1>
+    <div class="container" data-aos="fade-up">
+        <h1 class="text-2 text-center">Who I Am</h1>
         <div class="p-5">
             <p>
-                text text text text text text text text text text text text text text
-                text text text text text text text text text text text text text text
+                I'm an intuitive, creative, hardworking student at Lipscomb University. My diverse
+                creative background grants me a lot of fresh perspective and insight into the problems I solve.
+                In addition to my consistent drive to improve and learn more about the UX field, I highly value critical
+                soft skills like effective communication, clear writing, and time management.
             </p>
             <p class="pt-5">
-                text text text text text text text text text text text text text text
-                text text text text text text text text text text text text text text
+                I'm currently pursuing a Web Development major with a focus on UI/UX Design, and I'm working towards a
+                career in User Experience Design or Audio Experience Design.
             </p>
         </div>
 
@@ -83,34 +92,40 @@
 
     <!-- Recent Projects section -->
     <div id="recent-projects" class="container-fluid section bg-1 p-5">
-    <div class="container">
-        <h1 class="text-3">Recent Projects</h1>
+    <div class="container" data-aos="fade-up">
+        <h1 class="text-3 text-center">Recent Projects</h1>
         <!-- project 1 -->
         <div id="project-1" class="row p-5">
-            <div class="col-6">
-                image
+            <div class="col-md-6 pb-3">
+                <a href="#"><img src="images/printerapp.png" class="img-fluid zoom" alt="placeholderimage"></a>
             </div>
-            <div class="col-6">
+            <div class="col-md-6">
+                <h1>School Printer App Redesign</h1>
                 <p>
-                    text text text text text text text text text text text text text text
-                    text text text text text text text text text text text text text text
-                    text text text text text text text text text text text text text text
+                    After years of putting up with our university's difficult-to-use, confusing
+                    printing program, I led a small UI design team through the process of sketching
+                    wireframes, building prototypes, testing and gathering feedback, and improving
+                    our product with successive iterations. We finished with a detailed mobile mockup
+                    and a working demo version for desktop.
                 </p>
-                <button type="button" class="btn bg-3">Learn More</button>
+                <a href="#"><button type="button" class="btn bg-3 mt-5 py-2 px-3 zoom">Learn More</button></a>
             </div>
         </div>
         <!-- project 2 -->
         <div id="project-2" class="row p-5">
-            <div class="col-6">
-                image
+            <div class="col-md-6 pb-3">
+                <a href="#"><img src="placeholder.png" class="img-fluid zoom" alt="placeholderimage"></a>
             </div>
-            <div class="col-6">
+            <div class="col-md-6">
+                <h1>Move! Music City Website</h1>
                 <p>
-                    text text text text text text text text text text text text text text
-                    text text text text text text text text text text text text text text
-                    text text text text text text text text text text text text text text
+                    For this volunteer project, I worked with a Nashville public school teacher
+                    to turn her vision into reality-- to bring exercise and its numerous benefits to as many
+                    young students as possible. schools. After solidifying the site's navigation and design
+                    styles, I followed our site map to craft a clear, organized site that informs visitors of the Move! Music City
+                    program and encourages them to take their next step (no pun intended).
                 </p>
-                <button type="button" class="btn bg-3">Learn More</button>
+                <a href="#"><button type="button" class="btn bg-3 mt-5 py-2 px-3 zoom">Learn More</button></a>
             </div>
         </div>
     </div>
@@ -118,17 +133,23 @@
 
     <!-- My Skillset section -->
     <div id="my-skillset" class="container-fluid section bg-0 p-5 text-light">
-    <div class="container">
+    <div class="container" data-aos="fade-up">
         <h1 class="text-2">My Skillset</h1>
     </div>
     </div>
 
     <!-- Contact section -->
     <div id="contact" class="container-fluid section bg-1 p-5">
-    <div class="container">
+    <div class="container" data-aos="fade-up">
         <h1 class="text-3">Contact Me</h1>
     </div>
     </div>
 
+
+<!-- animate on scroll script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({ once: true, });
+</script>
 
 </body>
