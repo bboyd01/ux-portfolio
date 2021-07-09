@@ -16,6 +16,11 @@ p, button {
     font-size: 110%;
 }
 
+.btn-blue:hover {
+    color: #FFFFFF;
+}
+
+
 .name-spacing {
     padding-top: 8em;
 }
@@ -26,8 +31,18 @@ p, button {
 .h-medium {
     font-size: 250%;
 }
+.h-medium-2 {
+    font-size: 200%;
+}
 .text-button {
-    font-size: 115%;
+    font-size: 120%;
+}
+.btn-flush {
+    position: absolute;
+    bottom: 0;
+}
+.i-lg {
+    font-size: 300%;
 }
 
 .section {
@@ -62,6 +77,9 @@ p, button {
 
 .text-0 {
     color: #0B223C;
+}
+.text-1 {
+    color: #FFFFFF;
 }
 .text-2 {
     color: #438bdc;
