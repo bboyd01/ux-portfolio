@@ -37,6 +37,10 @@ p, button {
 .text-button {
     font-size: 120%;
 }
+.text-small {
+    font-size: 93%;
+    color: #888888;
+}
 .btn-flush {
     position: absolute;
     bottom: 0;
