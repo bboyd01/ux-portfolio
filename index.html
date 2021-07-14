@@ -14,6 +14,9 @@
     <script src="https://kit.fontawesome.com/d687bf9a07.js" crossorigin="anonymous"></script>
     <!-- animate on scroll effect -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Swiper JS carousel library -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- custom styles and scripts -->
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js"></script>
@@ -76,14 +79,12 @@
         <h1 class="text-2 text-center">Who I Am</h1>
         <div class="p-5">
             <p>
-                I'm a creative and hardworking Junior at Lipscomb University. I have a uniquely diverse
-                background in creative fields and technical areas, giving me a great combination of creative intuition
-                and analytical problem-solving. In addition to my consistent drive to improve and learn more about the
-                User Experience field, I highly value critical
-                soft skills like effective communication, clear writing, and time management.
+                I'm Brett, a creative and hardworking Junior at Lipscomb University. I have a diverse
+                background in creative fields and technical areas, giving me a great combination of ingenious intuition
+                and analytical problem-solving.
             </p>
             <p class="pt-5">
-                I'm currently pursuing a Web Development major with a focus on UI/UX Design, and I'm working towards a
+                I'm currently pursuing a Web Development major with a concentration in IT Entrepreneurship, and I'm working towards a
                 career in User Experience Design or Audio Experience Design.
             </p>
             <p class="pt-5">
@@ -99,6 +100,7 @@
     <div id="recent-projects" class="container-fluid section bg-1 p-5">
     <div class="container" data-aos="fade-up">
         <h1 class="text-3 text-center">Recent Projects</h1>
+
         <!-- project 1 -->
         <div id="project-1" class="card rounded-lg shadow my-5 p-4" data-aos="flip-down">
         <div class="row">
@@ -124,10 +126,82 @@
         </div>
         <!-- more info -->
         <div id="project-1-info" class="row collapse px-3">
-            <p class="mt-4">
-                more more more more more more more more more more more more more more more more more more
-                more more more more more more more more more more more more more more more more more more
-            </p>
+        <div class="mt-5">
+            <h1 class="mt-2">The Problem</h1>
+            <!-- Swiper slides -->
+            <div class="swiper-container container ml-0 mr-5 pb-4" style="width: 90%">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <p>
+                            My university's printing dashboard features a poorly designed and often confusing layout that greatly
+                            increases the difficulty
+                            and friction of using their printing service. This interface sprawls across several pages containing
+                            <u>unintuitive button placement</u>,
+                            <u>redundant data displays</u>, and a <u>lack of visual continuity and symmetry</u>. Furthermore, the "mobile version"
+                            of this interface is
+                            a single, outdated-looking page that prompts the user to log out or View in Desktop Mode-- and using
+                            this desktop interface is
+                            <u>not</u> fun on a small phone screen!
+                        </p>
+                        <p class="text-small">
+                            <i class="fas fa-hand-pointer"></i> Drag to see more 
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        picture1
+                    </div>
+                    <div class="swiper-slide">
+                        picture2
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="mt-0">
+            <h1 class="mt-2">The Process</h1>
+            <!-- Swiper slides -->
+            <div class="swiper-container container ml-0 mr-5 pb-4" style="width: 90%">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <p>
+                            text
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        picture1
+                    </div>
+                    <div class="swiper-slide">
+                        picture2
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="mt-0">
+            <h1 class="mt-2">The Results</h1>
+            <!-- Swiper slides -->
+            <div class="swiper-container container ml-0 mr-5 pb-4" style="width: 90%">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <p>
+                            text
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        picture1
+                    </div>
+                    <div class="swiper-slide">
+                        picture2
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+
         </div>
         </div>
         <!-- project 2 -->
@@ -155,10 +229,14 @@
         </div>
         <!-- more info -->
         <div id="project-2-info" class="row collapse px-3">
-            <p class="mt-4">
+        <div class="mt-4">
+
+            <p>
                 more more more more more more more more more more more more more more more more more more
                 more more more more more more more more more more more more more more more more more more
             </p>
+
+        </div>
         </div>
         </div>
 
@@ -252,13 +330,13 @@
 
         <br>
 
-        <a href="#" role="button" class="btn text-button text-3 pl-0 mx-0 my-3 zoom" data-toggle="collapse" data-target="#contact-form-container">
+        <!-- <a href="#" role="button" class="btn text-button text-3 pl-0 mx-0 my-3 zoom" data-toggle="collapse" data-target="#contact-form-container">
             Open Web Form <i class="fas fa-chevron-right"></i>
         </a>
 
         <div id="contact-form-container" class="collapse">
             contact me form
-        </div>
+        </div> -->
 
 
     </div>
@@ -270,5 +348,35 @@
 <script>
     AOS.init({ once: true, });
 </script>
+<!-- Swiper script -->
+<script>
+    // initialize swiper library
+    const swiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        //direction: 'vertical',
+        //loop: true,
 
+        // pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        grabCursor: true,
+
+        // And if we need scrollbar
+        //scrollbar: {
+        //  el: '.swiper-scrollbar',
+        //},
+        
+        // work inside hidden div
+        observer: true,
+        observeParents: true,
+    });
+</script>
 </body>

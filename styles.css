@@ -16,10 +16,10 @@ p, button {
     font-size: 110%;
 }
 
+
 .btn-blue:hover {
     color: #FFFFFF;
 }
-
 
 .name-spacing {
     padding-top: 8em;
@@ -90,4 +90,14 @@ p, button {
 }
 .text-3 {
     color: #FD882E;
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #FD882E; 
+}
+
+.swiper-pagination > .swiper-pagination-bullet-active {
+    background-color: #FD882E;
 }
