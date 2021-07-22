@@ -14,9 +14,11 @@
     <script src="https://kit.fontawesome.com/d687bf9a07.js" crossorigin="anonymous"></script>
     <!-- animate on scroll effect -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- Swiper JS carousel library -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- lightgallery JS library -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.2.0-beta.1/css/lightgallery-bundle.min.css"
+        integrity="sha512-t0TUyUBWqzyglC9ZcYTZnJdnZfTDG5RBSnJ0oIIx35oPPiQXRKscRTBUv38EruvTJNhgt0WM8iEt97qSOzYgdg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- custom styles and scripts -->
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js"></script>
@@ -79,7 +81,7 @@
         <h1 class="text-2 text-center">Who I Am</h1>
         <div class="p-5">
             <p>
-                I'm Brett, a creative and hardworking Junior at Lipscomb University. I have a diverse
+                I'm Brett, a creative and well-rounded Junior at Lipscomb University. I have a diverse
                 background in creative fields and technical areas, giving me a great combination of ingenious intuition
                 and analytical problem-solving.
             </p>
@@ -119,7 +121,7 @@
                     our product with successive iterations. We finished with a detailed mobile mockup
                     and a working demo version for desktop.
                 </p>
-                <a href="#" role="button" class="btn text-button text-3 btn-flush pl-0 mx-0 my-2 zoom" data-toggle="collapse" data-target="#project-1-info">
+                <a href="#" role="button" class="btn text-button text-3 btn-flush pl-0 mx-0 my-2 zoom" onclick="swapIcon(this)" data-toggle="collapse" data-target="#project-1-info">
                     Learn More <i class="fas fa-chevron-right"></i>
                 </a>
             </div>
@@ -136,16 +138,16 @@
                 version" of this interface is a single, outdated-looking page that prompts the user to log out or View in Desktop Mode-- and let
                 me tell you, that is a <u>challenge</u> to use at all!
             </p>
-            <div class="row">
-                <div class="col-sm-4">
-                    picture1
-                </div>
-                <div class="col-sm-4">
-                    picture2
-                </div>
-                <div class="col-sm-4">
-                    picture3
-                </div>
+            <div id="lightgallery1a" class="row" style="display: inline-block;">
+                <a href="placeholder.png">
+                    <img alt="img" class="img-fluid img-thumbnail zoom" src="placeholder.png" style="width: 33%;">
+                </a>
+                <a href="placeholder.png">
+                    <img alt="img" class="img-fluid img-thumbnail zoom" src="placeholder.png" style="width: 33%;">
+                </a>
+                <a href="placeholder.png">
+                    <img alt="img" class="img-fluid img-thumbnail zoom" src="placeholder.png" style="width: 33%;">
+                </a>
             </div>
         </div>
 
@@ -189,76 +191,69 @@
         </div>
 
         <div class="mt-2">
-            <h1 class="mt-2">The Results</h1>
-            <p class="mt-1">
-                After weeks of iterating changes and endlessly tweaking things, our hard work paid off-- we finished the semester
-                with the completion of an appealing and streamlined interface redesign, with a Figma mockup for mobile devices and a (mostly) working demo
-                for desktop computers. As with most of our college projects, this was a massive learning experience for my entire team. For my first foray
-                into UI/UX Design, I couldn't be happier with how well my team's project turned out. Unfortunately, we'll still have to use the old
-                interface for printing our papers and stuff-- for now, at least.
-            </p>
-            <p>
-                Want to see our work for yourself? Check out our Figma project and desktop demo! 
-            </p>
-            <div class="row">
+            <div class="mb-5">
+                <h1 class="mt-2">The Results</h1>
+                <p class="mt-1">
+                    After weeks of iterating changes and endlessly tweaking things, our hard work paid off-- we finished the semester
+                    with the completion of an appealing and streamlined interface redesign, with a Figma mockup for mobile devices and a
+                    (mostly) working demo
+                    for desktop computers. As with most of our college projects, this was a massive learning experience for my entire
+                    team. For my first foray
+                    into UI/UX Design, I couldn't be happier with how well my team's project turned out. Unfortunately, we'll still have
+                    to use the old
+                    interface for printing our papers and stuff-- for now, at least.
+                </p>
+                <p>
+                    Want to see our work for yourself? Check out our Figma project and desktop demo!
+                </p>
+            </div>
+            <div class="row mt-5 pt-2">
                 <div class="col-sm-4">
                     <!-- <a href="https://www.figma.com/proto/1Zb7Gsb1XFc6CQQQ4KqOUO/Print-Mobile-App-Copy?node-id=232%3A22195&scaling=scale-down&page-id=232%3A22194&starting-point-node-id=232%3A22195">Mobile Mockup</a> -->
                     <a href="https://www.figma.com/proto/1Zb7Gsb1XFc6CQQQ4KqOUO/Print-Mobile-App-Copy?node-id=232%3A22195&scaling=scale-down&page-id=232%3A22194&starting-point-node-id=232%3A22195"
-                     target="_blank" role="button" class="btn text-button text-3 btn-flush pl-0 mx-0 mt-5 mb-3 zoom">
+                     target="_blank" role="button" class="btn text-button text-3 btn-flush pl-0 mx-0 mt-5 mb-0 zoom">
                         Mobile Mockup <i class="fas fa-external-link-alt"></i>
                     </a>
-                   
-                    <div class="mt-5">
+                    <!-- <div class="mt-5">
                         picture1
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-sm-4">
                     <!-- <a href="https://bboyd01.github.io/lu-printing-desktop/">Desktop Demo</a> -->
                     <a href="https://bboyd01.github.io/lu-printing-desktop/"
-                    target="_blank" role="button" class="btn text-button text-3 btn-flush pl-0 mx-0 mt-5 mb-3 zoom">
+                    target="_blank" role="button" class="btn text-button text-3 btn-flush pl-0 mx-0 mt-5 mb-0 zoom">
                         Desktop Demo <i class="fas fa-external-link-alt"></i>
                     </a>
-                    
-                    <div class="mt-5">
+                    <!-- <div class="mt-5">
                         picture1
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-sm-4">
                     <!-- <a href="https://www.figma.com/file/1Zb7Gsb1XFc6CQQQ4KqOUO/Print-Mobile-App-Copy?node-id=232%3A22194">Figma project</a> -->
                     <a href="https://www.figma.com/file/1Zb7Gsb1XFc6CQQQ4KqOUO/Print-Mobile-App-Copy?node-id=232%3A22194" role="button"
-                        target="_blank" class="btn text-button text-3 btn-flush pl-0 mx-0 mt-5 mb-3 zoom">
+                        target="_blank" class="btn text-button text-3 btn-flush pl-0 mx-0 mt-5 mb-0 zoom">
                         Our Figma Project <i class="fas fa-external-link-alt"></i>
                     </a>
-                
-                    <div class="mt-5">
+                    <!-- <div class="mt-5">
                         picture1
-                    </div>
+                    </div> -->
                 </div>
             </div>
-        </div>
-
-
-
-
-            <!-- Swiper slides -->
-            <!-- <div class="swiper-container container ml-0 mr-5 pb-4" style="width: 90%">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <p>
-                            text
-                        </p>
-                    </div>
-                    <div class="swiper-slide">
-                        picture1
-                    </div>
-                    <div class="swiper-slide">
-                        picture2
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div> -->
+            <div id="lightgallery1b" class="row" style="display: inline-block;">
+                <a href="placeholder.png">
+                    <img alt="img" class="img-fluid img-thumbnail zoom" src="placeholder.png" style="width: 33%;">
+                </a>
+                <a href="placeholder.png">
+                    <img alt="img" class="img-fluid img-thumbnail zoom" src="placeholder.png" style="width: 33%;">
+                </a>
+                <a href="placeholder.png">
+                    <img alt="img" class="img-fluid img-thumbnail zoom" src="placeholder.png" style="width: 33%;">
+                </a>
+            </div>
         </div>
         </div>
+        </div>
+
         <!-- project 2 -->
         <div id="project-2" class="card rounded-lg shadow my-5 p-4" data-aos="flip-down">
         <div class="row">
@@ -277,7 +272,7 @@
                     styles, I followed our site map to craft a clear, organized site that informs visitors of the Move! Music City
                     program and encourages them to take their next step (no pun intended).
                 </p>
-                <a href="#" role="button" class="btn text-button text-3 btn-flush pl-0 mx-0 my-2 zoom" data-toggle="collapse" data-target="#project-2-info">
+                <a href="#" role="button" class="btn text-button text-3 btn-flush pl-0 mx-0 my-2 zoom" onclick="swapIcon(this)" data-toggle="collapse" data-target="#project-2-info">
                     Learn More <i class="fas fa-chevron-right"></i>
                 </a>
             </div>
@@ -458,35 +453,14 @@
 <script>
     AOS.init({ once: true, });
 </script>
-<!-- Swiper script -->
-<script>
-    // initialize swiper library
-    const swiper = new Swiper('.swiper-container', {
-        // Optional parameters
-        //direction: 'vertical',
-        //loop: true,
 
-        // pagination
-        pagination: {
-            el: '.swiper-pagination',
-        },
+<!-- lightgallery script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.2.0-beta.1/lightgallery.umd.js"
+    integrity="sha512-XrVvBDWADjcrsQvoM9IsLBjbmq4qbrT9dT0qe75CcK69iQzcf5EVYA3kN8y71+O/rWSSs8KLweEQ3YPiSH4Iog=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- lightgallery plugins -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.2.0-beta.1/plugins/thumbnail/lg-thumbnail.umd.min.js"
+    integrity="sha512-v+/cnd6XTt28XV37rip+QRMB9OTYr90c3TxqNLLZZSH7cfoirS2N6bt9HRvlbyRnhco/vBK5pUCJdaIpS+fuhw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-        // arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-
-        grabCursor: true,
-
-        // And if we need scrollbar
-        //scrollbar: {
-        //  el: '.swiper-scrollbar',
-        //},
-        
-        // work inside hidden div
-        observer: true,
-        observeParents: true,
-    });
-</script>
 </body>
