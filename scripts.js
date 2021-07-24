@@ -19,6 +19,10 @@ $(function() {
         plugins: [lgThumbnail],
         speed: 500,
     });
+    lightGallery(document.getElementById("lightgallery2a"), {
+        plugins: [lgThumbnail],
+        speed: 500,
+    });
 
 
 
