@@ -1,4 +1,5 @@
 function swapIcon(target) {
+    console.log("hi");
     var item = $(target).find("i");
     if (item.hasClass("fa-chevron-right")) {
         $(item).removeClass("fa-chevron-right");

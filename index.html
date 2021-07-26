@@ -24,19 +24,19 @@
     <script src="scripts.js"></script>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="150">
+<body class="content" data-spy="scroll" data-target=".navbar" data-offset="150">
 
     <!-- name and picture section -->
-    <div id="top" class="container-fluid section bg-1" style="min-height: 50em;">
+    <div id="top" class="container-fluid section cover-page" style="height: 52em;">
     <div class="container">
         <div class="row name-spacing pb-5">
-            <div class="col-md-6">
+            <div class="col-md-6" style="height: 33em;"> <!-- remove the height mod if using an img -->
                 <h1 class="h-big" data-aos="flip-down" data-aos-duration="800">Brett Boyd</h1>
                 <h1 class="h-medium-2" data-aos="fade-up" data-aos-duration="1100">Lipscomb University Student</h1>
             </div>
-            <div class="col-md-6 pt-5">
+            <!-- <div class="col-md-6 pt-5">
                 <img src="pic-no-bg.png" class="img-fluid" alt="Picture of Me" style="scale: 150%">
-            </div>
+            </div> -->
         </div>
 
         <div class="d-flex justify-content-center py-5 zoom">
@@ -107,7 +107,7 @@
         <div id="project-1" class="card rounded-lg shadow my-5 p-4" data-aos="flip-down">
         <div class="row">
             <div class="col-md-6 pb-3">
-                <a href="#"><img src="images/printerapp.png" class="img-fluid zoom" alt="placeholderimage"></a>
+                <img src="img/printapp-thumb.png" class="img-fluid clickable zoom" alt="printer app" onclick="swapIcon($('#button1'))" data-toggle="collapse" data-target="#project-1-info">
             </div>
             <div class="col-md-6">
                 <h1>School Printer App Redesign</h1>
@@ -121,7 +121,7 @@
                     our product with successive iterations. We finished with a detailed mobile mockup
                     and a working demo version for desktop.
                 </p>
-                <a href="#" role="button" class="btn text-button text-3 btn-flush pl-0 mx-0 my-2 zoom" onclick="swapIcon(this)" data-toggle="collapse" data-target="#project-1-info">
+                <a id="button1" href="#" role="button" class="btn text-button text-3 btn-flush pl-0 mx-0 my-2 zoom" onclick="swapIcon(this)" data-toggle="collapse" data-target="#project-1-info">
                     Learn More <i class="fas fa-chevron-right"></i>
                 </a>
             </div>
@@ -139,15 +139,18 @@
                 me tell you, that is a <u>challenge</u> to use at all!
             </p>
             <div id="lightgallery1a" class="row px-3" style="display: inline-block;">
-                <a href="placeholder.png">
-                    <img alt="img" class="img-fluid img-thumbnail zoom" src="placeholder.png" style="width: 32.9%;">
+                <a href="img/print2.gif">
+                    <img alt="Here's a typical user flow for our school's printing app. It's a bit confusing, sometimes."
+                    class="img-fluid img-thumbnail zoom" src="img/print2thumb.gif" style="width: 32.9%;">
                 </a>
-                <a href="placeholder.png">
-                    <img alt="img" class="img-fluid img-thumbnail zoom" src="placeholder.png" style="width: 32.9%;">
+                <a href="img/print1.gif">
+                    <img alt="Here are some of the multiple pages. Notice how spread out the important info is!"
+                    class="img-fluid img-thumbnail zoom" src="img/print1thumb.gif" style="width: 32.9%;">
                 </a>
-                <a href="placeholder.png">
-                    <img alt="img" class="img-fluid img-thumbnail zoom" src="placeholder.png" style="width: 32.9%;">
-                </a>
+                <!-- <a href="placeholder.png">
+                    <img alt="img"
+                    class="img-fluid img-thumbnail zoom" src="placeholder.png" style="width: 32.9%;">
+                </a> -->
             </div>
         </div>
 
@@ -240,14 +243,15 @@
                 </div>
             </div>
             <div id="lightgallery1b" class="row px-3" style="display: inline-block;">
-                <a href="placeholder.png">
-                    <img alt="img" class="img-fluid img-thumbnail zoom" src="placeholder.png" style="width: 32.9%;">
+                <a href="img/printapp1.png">
+                    <img alt="The end result of our semester project." class="img-fluid img-thumbnail zoom" src="img/printapp1.png" style="width: 32.9%;">
                 </a>
-                <a href="placeholder.png">
-                    <img alt="img" class="img-fluid img-thumbnail zoom" src="placeholder.png" style="width: 32.9%;">
+                <a href="img/printapp2.png">
+                    <img alt="A nice stretch goal that we were able to add to the project." class="img-fluid img-thumbnail zoom" src="img/printapp2.png" style="width: 32.9%;">
                 </a>
-                <a href="placeholder.png">
-                    <img alt="img" class="img-fluid img-thumbnail zoom" src="placeholder.png" style="width: 32.9%;">
+                <a href="img/printapp3.png">
+                    <img alt="The good, the bad, and the ugly behind-the-scenes. Our project became more organized with each iteration, though."
+                    class="img-fluid img-thumbnail zoom" src="img/printapp3.png" style="width: 32.9%;">
                 </a>
             </div>
         </div>
@@ -258,7 +262,7 @@
         <div id="project-2" class="card rounded-lg shadow my-5 p-4" data-aos="flip-down">
         <div class="row">
             <div class="col-md-6 pb-3">
-                <a href="#"><img src="placeholder.png" class="img-fluid zoom" alt="placeholderimage"></a>
+                <img src="placeholder.png" class="img-fluid clickable zoom" alt="placeholderimage" onclick="swapIcon($('#button2'))" data-toggle="collapse" data-target="#project-2-info">
             </div>
             <div class="col-md-6">
                 <h1>Move! Music City Website</h1>
@@ -272,7 +276,7 @@
                     styles, I followed our site map to craft a clear, organized site that informs visitors of the Move! Music City
                     program and encourages them to take their next step (no pun intended).
                 </p>
-                <a href="#" role="button" class="btn text-button text-3 btn-flush pl-0 mx-0 my-2 zoom" onclick="swapIcon(this)" data-toggle="collapse" data-target="#project-2-info">
+                <a id="button2" href="#" role="button" class="btn text-button text-3 btn-flush pl-0 mx-0 my-2 zoom" onclick="swapIcon(this)" data-toggle="collapse" data-target="#project-2-info">
                     Learn More <i class="fas fa-chevron-right"></i>
                 </a>
             </div>
@@ -362,7 +366,7 @@
 
             <div class="mt-5">
                 <p class="mb-5">
-                    I no longer contribute to the site, but Stephanie remains active with keeping the site updated and fresh! Click below to give it a look.
+                    I no longer contribute to the site, but Stephanie remains active with keeping the site updated and fresh! Click below to check it out.
                 </p>               
                 <a href="https://www.movemusicity.com/" target="_blank" role="button" class="btn text-button text-3 btn-flush pl-0 mx-0 mb-3 zoom">
                     Move! Music City <i class="fas fa-external-link-alt"></i>

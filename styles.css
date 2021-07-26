@@ -5,7 +5,10 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 105%;
-    background-color: #0B223C;
+    background-color: #FFFFFF;
+    /* background-color: #0B223C; 
+        ^^ changed because of cover image
+    */
     /*
     background: linear-gradient(#0b131d, #162233, #0b131d);
     height: 100%; for parallax effect
@@ -14,6 +17,42 @@ body {
 
 p, button {
     font-size: 110%;
+}
+
+.content {
+    /* this is needed or the background will be offset by a few pixels at the top */
+    overflow: auto;
+    position: relative;
+}
+.content::before {
+    /* background image with its own styling */
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+    background-image: url("img/pic.jpg");
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+
+    animation: cover-anim 0.7s ease-in 0.6s 1 normal forwards;
+}
+.content::before::before {
+    background-color: #FFFFFF;
+}
+@keyframes cover-anim {
+    0% {opacity: 0;}
+    100% {opacity: 0.7;}
 }
 
 
@@ -59,12 +98,14 @@ p, button {
     transform: scale(1.035);
 }
 
+.clickable {
+    cursor: pointer;
+}
+
 .blur {
     -webkit-filter: blur(3px);
     filter: blur(3px);
 }
-
-
 
 .bg-0 {
     background-color: #0B223C;
@@ -95,7 +136,7 @@ p, button {
 
 .swiper-button-prev,
 .swiper-button-next {
-    color: #FD882E; 
+    color: #FD882E;
 }
 
 .swiper-pagination > .swiper-pagination-bullet-active {
