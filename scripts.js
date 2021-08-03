@@ -10,6 +10,11 @@ function swapIcon(target) {
     }
 }
 
+function toggleResume() {
+    $("#resumeContainer").toggleClass("d-none");
+    $("#showResume").collapse();
+}
+
 $(function() {
     // lightgallery library
     lightGallery(document.getElementById("lightgallery1a"), {
@@ -24,6 +29,17 @@ $(function() {
         plugins: [lgThumbnail],
         speed: 500,
     });
+
+
+    var width = $(window).width();
+    var sm = 576;
+    var md = 768;
+
+    if (!(width >= md)) {
+        console.log("s m a l l");
+        $("#resumeContainer").removeClass("w-75");
+        $("#resumeContainer").addClass("w-100");
+    }
 
 
 

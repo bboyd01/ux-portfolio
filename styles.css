@@ -56,6 +56,42 @@ p, button {
 }
 
 
+/* .content2 {
+    background-image: url("img/coding.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+} */
+
+/* .content3 {
+    background-image: url("img/mail.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+} */
+
+.iframe-container {
+    position: relative;
+    overflow: hidden;
+    /* width: 70%; */
+    padding-top: 95.3%;
+}
+.iframe-responsive {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
 .btn-blue:hover {
     color: #FFFFFF;
 }
@@ -131,14 +167,4 @@ p, button {
 }
 .text-3 {
     color: #FD882E;
-}
-
-
-.swiper-button-prev,
-.swiper-button-next {
-    color: #FD882E;
-}
-
-.swiper-pagination > .swiper-pagination-bullet-active {
-    background-color: #FD882E;
 }
