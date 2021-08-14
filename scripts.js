@@ -15,22 +15,12 @@ function toggleResume() {
     $("#showResume").collapse();
 }
 
+function sendEmail() {
+    window.location.assign("mailto:brboyd@mail.lipscomb.edu?subject=Let's get in touch.");
+}
+
 $(function() {
-    // lightgallery library
-    lightGallery(document.getElementById("lightgallery1a"), {
-        plugins: [lgThumbnail],
-        speed: 500,
-    });
-    lightGallery(document.getElementById("lightgallery1b"), {
-        plugins: [lgThumbnail],
-        speed: 500,
-    });
-    lightGallery(document.getElementById("lightgallery2a"), {
-        plugins: [lgThumbnail],
-        speed: 500,
-    });
-
-
+    
     var width = $(window).width();
     var sm = 576;
     var md = 768;
@@ -41,6 +31,24 @@ $(function() {
         $("#resumeContainer").addClass("w-100");
     }
 
+    // load lightgallery after the delay to ensure a smooth page load
+    var timeInMS = 1000;
+    setTimeout(function() {
+        // lightgallery library
+        lightGallery(document.getElementById("lightgallery1a"), {
+            plugins: [lgThumbnail],
+            speed: 500,
+        });
+        lightGallery(document.getElementById("lightgallery1b"), {
+            plugins: [lgThumbnail],
+            speed: 500,
+        });
+        lightGallery(document.getElementById("lightgallery2a"), {
+            plugins: [lgThumbnail],
+            speed: 500,
+        });
+    }, timeInMS);
 
+    
 
 });

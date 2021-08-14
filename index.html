@@ -14,9 +14,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet"> -->
     <!-- icons -->
     <script src="https://kit.fontawesome.com/d687bf9a07.js" crossorigin="anonymous"></script>
     <!-- animate on scroll effect -->
@@ -92,19 +89,35 @@
     <div class="container" data-aos="fade-up">
         <h1 class="text-2 text-center">Who I Am</h1>
         <div class="p-2 p-md-5">
-            <p>
-                I'm Brett, a creative and well-rounded Junior at Lipscomb University. I have a diverse
-                background in creative fields and technical areas, giving me a great combination of ingenious intuition
-                and analytical problem-solving.
-            </p>
-            <p class="pt-2 pt-md-5">
-                I'm currently pursuing a Web Development major with a concentration in IT Entrepreneurship, and I'm working towards a
-                career in User Experience Design or Audio Experience Design.
-            </p>
-            <p class="pt-2 pt-md-5">
-                Fun fact: I'm also an avid music composer! I love creating music in all sorts of different styles, and I also
-                heartily enjoy learning piano.
-            </p>
+           
+            <div class="row">
+                <div class="col-1 text-right">
+                    <i class="fas fa-user-graduate i-lg d-none d-sm-block"></i>
+                </div>
+                <div class="col-11">
+                    I'm Brett, a creative and well-rounded Junior at Lipscomb University. I have a diverse
+                    background in creative fields and technical areas, giving me a great combination of ingenious intuition
+                    and analytical problem-solving.
+                </div>
+            </div>
+            <div class="row pt-2 pt-md-5">
+                <div class="col-1 text-right">
+                    <i class="fas fa-university i-lg d-none d-sm-block"></i>
+                </div>
+                <div class="col-11">
+                    I'm currently pursuing a Web Development major with a concentration in IT Entrepreneurship, aiming for a
+                    career in User Experience Design.
+                </div>
+            </div>
+            <div class="row pt-2 pt-md-5">
+                <div class="col-1 text-right">
+                    <i class="fas fa-music i-lg d-none d-sm-block"></i>
+                </div>
+                <div class="col-11">
+                    Fun fact: I'm also an avid music composer! I love creating music in all sorts of different styles, and I also
+                    heartily enjoy learning piano.
+                </div>
+            </div>
         </div>
 
     </div>
@@ -133,9 +146,9 @@
                     our product with successive iterations. We finished with a detailed mobile mockup
                     and a working demo version for desktop.
                 </p>
-                <a id="button1" href="#" role="button" class="btn text-button text-3 btn-flush pl-0 mx-0 my-2 zoom" onclick="swapIcon(this)" data-toggle="collapse" data-target="#project-1-info">
+                <btn id="button1" class="btn text-button text-3 btn-flush pl-0 mx-0 my-2 zoom" onclick="swapIcon(this)" data-toggle="collapse" data-target="#project-1-info">
                     Learn More <i class="fas fa-chevron-right"></i>
-                </a>
+                </btn>
             </div>
         </div>
         <!-- more info -->
@@ -282,9 +295,9 @@
                     styles, I followed our site map to craft a clear, organized site that informs visitors of the Move! Music City
                     program and encourages them to take their next step (no pun intended).
                 </p>
-                <a id="button2" href="#" role="button" class="btn text-button text-3 btn-flush pl-0 mx-0 my-2 zoom" onclick="swapIcon(this)" data-toggle="collapse" data-target="#project-2-info">
+                <btn id="button2" class="btn text-button text-3 btn-flush pl-0 mx-0 my-2 zoom" onclick="swapIcon(this)" data-toggle="collapse" data-target="#project-2-info">
                     Learn More <i class="fas fa-chevron-right"></i>
-                </a>
+                </btn>
             </div>
         </div>
         <!-- more info -->
@@ -369,6 +382,7 @@
                     <img alt="img" class="img-fluid img-thumbnail zoom" src="placeholder.png" style="width: 32.9%;">
                 </a> -->
             </div>
+            
 
             <div class="mt-5">
                 <p class="mb-5">
@@ -454,7 +468,7 @@
         </p>
 
         <div id="resume" class="collapse d-flex justify-content-center">
-            <div id="resumeContainer" class="iframe-container d-none w-75">
+            <div id="resumeContainer" class="iframe-container d-none w-75 mt-5">
                 <iframe src="Resume.pdf" class="iframe-responsive"></iframe>
             </div>
         </div>
@@ -468,10 +482,12 @@
         <h1 class="text-3 text-center">Contact Me</h1>
 
         <div class="d-flex justify-content-center">
-            <a href="mailto:brboyd@mail.lipscomb.edu?subject=Let's get in touch." role="button"
-                class="btn text-button text-3 mt-5 zoom">
+            <!-- <a href="" role="button" class="btn text-button text-3 mt-5 zoom">
                 Open Default Mail App <i class="fas fa-external-link-alt"></i>
-            </a>
+            </a> -->
+            <btn class="btn text-button text-3 mt-5 zoom" onclick="sendEmail()">
+                Open Default Mail App <i class="fas fa-external-link-alt"></i>
+            </btn>
         </div>
 
         <br>
@@ -492,7 +508,10 @@
 <!-- animate on scroll script -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-    AOS.init({ once: true, });
+    AOS.init({
+        once: true,
+        // disable: "mobile",
+    });
 </script>
 
 <!-- lightgallery script -->

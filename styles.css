@@ -23,14 +23,17 @@ p, button {
 
 .cover-page {
     max-height: 90vh;
+    /* background-image: url("img/pic.jpg");
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover; */
 }
 .content {
-    /* this is needed or the background will be offset by a few pixels at the top */
     overflow: auto;
     position: relative;
 }
 .content::before {
-    /* background image with its own styling */
     content: "";
     position: fixed;
     left: 0;
@@ -50,11 +53,9 @@ p, button {
 
     opacity: 0;
 
-    animation: cover-anim 0.7s ease-in 0.6s 1 normal forwards;
+    animation: cover-anim 0.6s ease-in 1s 1 normal forwards;
 }
-.content::before::before {
-    background-color: #FFFFFF;
-}
+
 @keyframes cover-anim {
     0% {opacity: 0;}
     100% {opacity: 0.7;}
@@ -125,6 +126,10 @@ p, button {
 .btn-flush {
     position: absolute;
     bottom: 0;
+}
+
+.i-md {
+    font-size: 200%;
 }
 .i-lg {
     font-size: 300%;
