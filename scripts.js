@@ -16,7 +16,7 @@ function toggleResume() {
 }
 
 function sendEmail() {
-    window.location.assign("mailto:brboyd@mail.lipscomb.edu?subject=Let's get in touch.");
+    window.location.assign("");
 }
 
 $(function() {
@@ -30,6 +30,11 @@ $(function() {
         $("#resumeContainer").removeClass("w-75");
         $("#resumeContainer").addClass("w-100");
     }
+
+    AOS.init({
+        once: true,
+        disable: "mobile",
+    });
 
     // load lightgallery after the delay to ensure a smooth page load
     var timeInMS = 1000;

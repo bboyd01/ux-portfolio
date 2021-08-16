@@ -7,6 +7,7 @@ body {
     /* font-family: 'Raleway', sans-serif; */
     font-family: 'Inter', sans-serif;
     font-size: 105%;
+    font-weight: 400;
     background-color: #FFFFFF;
     /* background-color: #0B223C; 
         ^^ changed because of cover image
@@ -17,17 +18,34 @@ body {
     */
 }
 
+
 p, button {
     font-size: 110%;
 }
 
+.font-3 {
+    font-weight: 300;
+}
+.font-4 {
+    font-weight: 400;
+}
+.font-5 {
+    font-weight: 500;
+}
+.font-6 {
+    font-weight: 600;
+}
+.font-7 {
+    font-weight: 700;
+}
+
 .cover-page {
     max-height: 90vh;
-    /* background-image: url("img/pic.jpg");
-  
+    background-image: url("img/pic2.jpg");
+    
     background-attachment: fixed;
     background-position: center;
-    background-size: cover; */
+    background-size: cover;
 }
 .content {
     overflow: auto;
@@ -40,7 +58,7 @@ p, button {
     right: 0;
     z-index: -1;
 
-    background-image: url("img/pic.jpg");
+    /* background-image: url("img/pic.jpg"); */
   
     background-attachment: fixed;
     background-position: center;
@@ -110,17 +128,19 @@ p, button {
     font-weight: bold;
 }
 .h-medium {
-    font-size: 250%;
+    font-size: 230%;
 }
 .h-medium-2 {
-    font-size: 200%;
+    font-weight: 400;
+    font-size: 185%;
     margin-left: 3px;
 }
 .text-button {
     font-size: 120%;
 }
 .text-small {
-    font-size: 93%;
+    font-weight: 300;
+    font-size: 92%;
     color: #888888;
 }
 .btn-flush {
